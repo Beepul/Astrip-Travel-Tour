@@ -1,0 +1,44 @@
+@import "../var";
+
+.single__dest__page{
+
+    .single__sec{
+
+        h3{
+            font-weight: 500;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: -15%;
+                left: 0;
+                width: 30%;
+                height: 3px;
+                background: linear-gradient(90deg, $brand, transparent);
+                
+                
+            }
+        }
+        p{
+            color: rgb(49, 49, 49);
+            line-height: 29px;
+        }
+        .note{
+            font-weight: 500;
+            font-family: $heading__font;
+            font-size: 18px;
+        }
+        .good{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 36px;
+            font-family: $heading__font;
+        }
+        .bold{
+            font-weight: 700;
+            font-size: 20px;
+            font-family: $heading__font;
+            line-height: 36px;
+        }
+    }
+}

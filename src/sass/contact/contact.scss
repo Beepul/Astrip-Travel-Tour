@@ -1,0 +1,97 @@
+@import "../var";
+
+
+.contact__page{
+    .text__con{
+       width: 800px;
+    }
+    .short__info{
+        border: 1px solid rgba(218, 218, 218, 0.541);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 18px;
+        &:hover{
+            span{
+                background-color: $brand;
+                i{
+                    color: $white;
+                }
+            }
+        }
+        span{
+            height: 5.5em;
+            width: 5.5em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid rgba(218, 218, 218, 0.541);
+            transition: 0.9s all linear;
+            border-radius: 50%;
+            i{
+                font-size: 32px;
+                color: rgb(78, 78, 78);
+            }
+        }
+    }
+    .form__con{
+        input, textarea{
+            border-radius: 0;
+            border: none;
+            border-bottom: 1px solid rgba(218, 218, 218, 0.541);
+            padding-bottom: 14px;
+            margin-bottom: 50px;
+            &:focus{
+                box-shadow: none;
+                border-bottom: 1px solid $brand;
+                &::placeholder{
+                    color: $brand;
+                }
+            }
+        }
+        .find__now{
+            background-color: $brand;
+            border-color: $brand;
+            border-radius: 0;
+            color: $white;
+            position: relative;
+            overflow: hidden;
+            padding: 10px 30px;
+            .label {
+                font-family: $para__font;
+                position: relative;
+                font-size: 18px;
+                font-weight: 500;
+                top: -1px;
+              }
+              .transition {
+                transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+                transition-duration: 0.8s;
+                background-color: $white;
+                border-radius: 9999px;
+                width: 0;
+                height: 0;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+              }
+              &:hover{
+                .transition{
+                    height: 15em;
+                    width: 15em;
+                }
+                .label{
+                    color: $brand;
+                }
+              }
+              &:active{
+                transform: scale(2);
+              }
+              
+        }
+    }
+}

@@ -1,0 +1,16 @@
+@import "var";
+
+.top__header__sec{
+    background-color: $blue;
+    color: $white;
+    .row{
+        height: 35px;
+        a,p{
+            font-size: 12px;
+        }
+        i{
+            font-size: 12px;
+            color: $brand;
+        }
+    }
+}
